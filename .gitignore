@@ -1,0 +1,69 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment folders
+env/
+venv/
+.venv/
+ENV/
+
+# VSCode settings (optional)
+.vscode/
+
+# PyCharm settings (optional)
+.idea/
+
+# MacOS system files
+.DS_Store
+
+# Spyder settings (optional)
+.spyderproject
+.spyproject
+
+# Python egg metadata
+*.egg-info/
+*.egg
+
+# Distribution / packaging
+build/
+dist/
+*.tar.gz
+*.whl
+
+# Logs
+*.log
+
+# Secrets or environment files
+.env
+.env.*
+
+# Test and coverage tools
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+
+# Jupyter Notebook hidden files (macOS/Linux)
+*.nbconvert.ipynb
+
+# MyPy and other linting tools
+.mypy_cache/
+.pyre/
+.pytype/
+
+# IPython history
+.profile_default/
+ipython_config.py
+
+# Models and datasets
+model/
+data/
+runs/
+uv.lock

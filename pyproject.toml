@@ -1,0 +1,14 @@
+[project]
+name = "transformer"
+version = "0.1.0"
+description = "Reimplementation of the Transformer translator from the [Attention is All You Need](https://arxiv.org/abs/1706.03762) paper."
+readme = "README.md"
+requires-python = ">=3.11.14"
+dependencies = [
+    "evaluate>=0.4.6",
+    "regex>=2025.11.3",
+    "sentencepiece>=0.2.1",
+    "tensorboard>=2.20.0",
+    "torch>=2.9.0",
+    "tqdm>=4.67.1",
+]
