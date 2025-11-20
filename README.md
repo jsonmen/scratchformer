@@ -90,5 +90,3 @@ MIT License—feel free to use, modify, and share.
 
 ## Acknowledgments
 Inspired by the original "Attention is All You Need" paper.
-
-*(P.S. In few days I create file with code explanation)*
