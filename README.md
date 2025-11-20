@@ -16,7 +16,7 @@ A from-scratch implementation of the Transformer architecture from "Attention is
 ## 📊 Results
 | Dataset              | Model Size | Epochs | BLEU (Test) | PPL (Test) |
 |----------------------|------------|--------|-------------|------------|
-| WMT en-de (1.5M subset) | ~30M params | 48     | 10.0       | ~13.0     |
+| WMT en-de (1.5M subset) | ~30M params | 48     | 10.0       | ~14.0     |
 
 *Trained on RTX 3090. Full logs available in releases*
 

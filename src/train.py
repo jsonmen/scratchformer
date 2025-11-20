@@ -159,17 +159,17 @@ def train(num_epochs: int):
         for batch_idx, item in enumerate(loop):
             src = item["src"].to(device)
             tgt = item["tgt"].to(device)
-            # FP16 forward + loss
+            # forward + loss
             with torch.autocast(device_type="cuda", enabled=FP16):
                 logits = model.forward(src, tgt[:, :-1])
                 logits = logits.reshape(-1, logits.shape[-1])
                 targets = tgt[:, 1:].reshape(-1)
                 loss = loss_fn(logits, targets)
-            # Token count (FP32)
+            # Token count
             non_pad = (targets != pad_idx).sum().item()
             train_loss_total += loss.item() * non_pad
             non_pad_total += non_pad
-            # FP16 backprop with accumulation
+            # Backprop with accumulation
             loss = loss / ACCUM_STEPS  # Normalize for avg
             scaler.scale(loss).backward()
             if (batch_idx + 1) % ACCUM_STEPS == 0:
